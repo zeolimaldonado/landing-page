@@ -1,10 +1,14 @@
 ---
 import Social from "./footer/Social.astro";
+import SuscriptionForm from "./react/SuscriptionForm";
 ---
 
-<section class="w-full min-h-28">
+<footer class="w-full min-h-28">
 	<div class="container mx-auto space-y-6">
-		<section class="border-b-2 border-b-slate-600 w-full"></section>
+		<section class="border-y-2 border-y-slate-700 w-full flex justify-between gap-6 items-center py-12">
+			<article class="flex-[3_3_0%]"></article>
+			<SuscriptionForm />
+		</section>
 		<section class="flex justify-between items-center py-6">
 			<div class="flex-1 flex justify-start items-center gap-10 whitespace-nowrap text-sm font-bold">
 				<span class="text-slate-400">Política de privacidad</span>
@@ -14,4 +18,4 @@ import Social from "./footer/Social.astro";
 			<Social />
 		</section>
 	</div>
-</section>
+</footer>./react/SuscriptionForm
