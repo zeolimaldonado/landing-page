@@ -3,8 +3,24 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="CTAPP">
 	<main class="w-screen min-h-screen overflow-y-auto">
 		<Hero />
+		<section class="w-full relative">
+			<div class="bg-body-pattern bg-repeat absolute inset-0 top-0 left-0 right-0" />
+			<section class="h-screen w-full"></section>
+			<section class="h-screen w-full"></section>
+			<section class="h-screen w-full"></section>
+		</section>
 	</main>
 </Layout>
+
+<style>
+	.bg-body-pattern {
+		background-size: 150px 150px;
+		background-image: url('/images/bg-grid.png');
+		background-position-y: -9px;
+		mask-image: linear-gradient(to bottom, transparent, 10%, white, 90%, transparent);
+		z-index: -2;
+	}
+</style>

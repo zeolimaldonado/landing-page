@@ -2,7 +2,8 @@
 import ButtonDemo from "./ButtonDemo.astro"
 ---
 
-<section class="w-full h-screen hero p-4 pt-20">
+<section id="home" class="w-full h-screen p-4 pt-20 relative">
+    <div class="hero" />
     <div class="container mx-auto h-full flex flex-col justify-center items-center gap-10">
         <section class="flex flex-col justify-center items-center gap-2">
             <h1 class="font-semibold text-5xl/[1.1] max-w-[56rem] text-center text-pretty px-4 mb-4">
@@ -19,9 +20,9 @@ import ButtonDemo from "./ButtonDemo.astro"
             </button>
         </section>
         <section class="flex justify-center gap-16 items-center pt-10">
-            <img src="/images/iso-28000-logo.png" class="max-h-16" alt="">
-            <img src="/images/ctpat-logo.png" class="max-h-16" />
-            <img src="/images/oea-logo.png" class="max-h-16" alt="">
+            <img src="/images/iso-28000-logo.png" class="max-h-16" decoding="async" alt="Iso logo">
+            <img src="/images/ctpat-logo.png" class="max-h-16" decoding="async" alt="Ctpat logo" />
+            <img src="/images/oea-logo.png" class="max-h-16" decoding="async" alt="Oea logo">
         </section>
     </div>
 </section>
@@ -34,9 +35,9 @@ import ButtonDemo from "./ButtonDemo.astro"
         top: 0%;
         bottom: 0%;
         width: 100%;
-        left: -0%;
-        background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-        -webkit-mask-image: radial-gradient(rgba(0, 0, 0, .45), transparent 70%);
-        mask-image: radial-gradient(rgba(0, 0, 0, .45), transparent 70%);
+        left: 0%;
+        background: linear-gradient(85deg, #4a89e9 5%, #2700ff 100%);
+        -webkit-mask-image: radial-gradient(rgba(0, 0, 0, .45), transparent 80%);
+        mask-image: radial-gradient(rgba(0, 0, 0, .45), transparent 80%);
     }
 </style>
