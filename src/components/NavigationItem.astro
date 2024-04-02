@@ -5,8 +5,8 @@ const { href } = Astro.props;
 ---
 
 <li class="group py-1 px-3 cursor-pointer">
-    <a href={href}>
-        <slot />
-    </a>
-    <div class="w-0 h-0.5 bg-sky-600 group-hover:w-full transition-all duration-500" />
+  <a href={href}>
+    <slot />
+  </a>
+  <div class="w-0 h-0.5 bg-sky-600 group-hover:w-full transition-all duration-500" />
 </li>
