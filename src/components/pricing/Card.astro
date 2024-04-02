@@ -1,0 +1,42 @@
+---
+const { title, features, description, price, previous } = Astro.props
+---
+<article class="w-1/4 px-7 py-8 rounded-sm bg-neutral-700 flex flex-col gap-5">
+    <header class="space-y-5">
+        <h4 class="text-center font-bold text-slate-200">
+            {title}
+        </h4>
+        <div class="flex gap-3 justify-center items-baseline py-2">
+            <h1 class="text-5xl font-extrabold">
+                {`$ ${price}`}
+            </h1>
+            <span class="text-xs text-slate-400 font-extrabold align-sub">/ mes</span>
+        </div>
+        <p class="text-sm font-light mx-auto">
+            {description}
+        </p>
+    </header>
+    <hr class="border-gray-600 border-b my-4" />
+    <div class="flex-1">
+        {
+            previous ? 
+            <p class="font-medium text-slate-300">
+                Incluye lo de <span class="font-bold">{previous}</span> más
+            </p> :
+            <h6 class="text-slate-300 font-medium">Características</h6>
+        }
+        <div class="flex flex-col gap-4 py-4">
+            {
+                features.map((feature: string) => (
+                    <div class="flex justify-start items-center gap-2">
+                        <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                        <span class="font-medium">{feature}</span>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    <button class="w-full py-3 text-white font-semibold bg-blue-600 rounded-full self-end">
+        Contratar
+    </button>
+</article>

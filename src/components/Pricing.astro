@@ -1,0 +1,64 @@
+---
+import { PRICING_PLANS } from "../constants";
+import Card from "./pricing/Card.astro";
+---
+
+<section id="pricing" class="container mx-auto min-h-screen py-10 pt-24 px-6 space-y-10 flex flex-col">
+    <h1 class="text-5xl text-center font-semibold text-slate-300">Precios</h1>
+    <div class="w-full flex-1 flex justify-center items-stretch gap-4">
+        {
+            PRICING_PLANS.map((plan, index) => (
+                <Card {...plan} previous={plan.previous ? PRICING_PLANS[index - 1].title : null} />
+            ))
+        }
+    </div>
+    <article class="w-full px-10 py-10 rounded-sm bg-neutral-700 flex gap-3 items-stretch">
+        <header class="space-y-5 flex-1 border-r-2 border-r-gray-600 pr-2 mr-6">
+            <h4 class="text-center font-bold text-slate-200">
+                Personalizado
+            </h4>
+            <div class="flex gap-3 justify-center items-baseline py-2">
+                <h1 class="text-5xl font-extrabold">
+                    A la medida
+                </h1>
+            </div>
+            <p class="text-sm font-light mx-auto text-center">
+                Contactanos para una cotización
+            </p>
+        </header>
+        <div class="flex-[2_2_0%] flex flex-col gap-8">
+            <p class="font-medium text-slate-300">
+                Si requires más capacidades en tu plan o una implementación personalidad, contáctanos, podemos diseñar un plan a tu medida.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="flex justify-start items-center gap-2">
+                    <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                    <span class="font-medium">Límite de ancho de banda</span>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                    <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                    <span class="font-medium">Límite de ancho de banda</span>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                    <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                    <span class="font-medium">Límite de ancho de banda</span>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                    <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                    <span class="font-medium">Límite de ancho de banda</span>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                    <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                    <span class="font-medium">Límite de ancho de banda</span>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                    <img width="24" height="24" src="/images/checkmark.svg" alt="">
+                    <span class="font-medium">Límite de ancho de banda</span>
+                </div>
+            </div>
+            <button class="w-full py-3 text-white font-semibold border border-slate-400 rounded-sm self-end">
+                Contáctanos
+            </button>
+        </div>
+    </article>
+</section>
