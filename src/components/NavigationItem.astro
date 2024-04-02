@@ -1,0 +1,12 @@
+---
+// const pathname = new URL(Astro.request.url).pathname;
+// const currentPath = pathname.slice(1);
+const { href } = Astro.props;
+---
+
+<li class="group py-1 px-3 cursor-pointer">
+    <a href={href}>
+        <slot />
+    </a>
+    <div class="w-0 h-0.5 bg-sky-600 group-hover:w-full transition-all duration-500" />
+</li>
