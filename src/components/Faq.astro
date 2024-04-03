@@ -8,8 +8,10 @@ import { FAQ } from './../constants/index'
     <p class="text-slate-400 font-semibold text-xl text-center">
         Tienes preguntas o dudas. Nosotros te tenemos respuestas.
     </p>
-    <div class="w-full flex justify-between gap-6">
-        <div class="flex-1"></div>
+    <div class="w-full flex justify-between items-stretch gap-6 py-6">
+        <div class="flex-1">
+            <img class='w-full object-contain' src='/images/questions.png' alt='Person thinking' />
+        </div>
         <Accordion client:load faq={FAQ} />
     </div>
 </section>
