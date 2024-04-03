@@ -76,3 +76,22 @@ export const PRICING_PLANS = [
         ]
     }
 ]
+
+export const FAQ = [
+    {
+        question: 'What is Astro?',
+        answer: 'Astro is a new way to build static websites. It is a new way to build static websites. It is a new way to build static websites.'
+    },
+    {
+        question: 'What is Astro?',
+        answer: 'Astro is a new way to build static websites. It is a new way to build static websites. It is a new way to build static websites.'
+    },
+    {
+        question: 'What is Astro?',
+        answer: 'Astro is a new way to build static websites. It is a new way to build static websites. It is a new way to build static websites.'
+    },
+    {
+        question: 'What is Astro?',
+        answer: 'Astro is a new way to build static websites. It is a new way to build static websites. It is a new way to build static websites.'
+    }
+]
