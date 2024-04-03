@@ -1,5 +1,5 @@
 
-export const navigation = [
+export const NAVIGATION = [
     {
         title: 'Inicio',
         href: '#home'

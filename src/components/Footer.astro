@@ -1,4 +1,5 @@
 ---
+import { NAVIGATION } from "../constants";
 import Social from "./footer/Social.astro";
 import SuscriptionForm from "./react/SuscriptionForm";
 ---
@@ -12,10 +13,11 @@ import SuscriptionForm from "./react/SuscriptionForm";
 				</div>
 				<div class="flex flex-col gap-2 justify-center items-start px-4 font-bold">
 					<h3 class="text-3xl font-bold text-slate-500">CTAPP</h3>
-					<a href="#home" class="text-slate-400 hover:text-slate-500 text-lg">Inicio</a>
-					<a href="#features" class="text-slate-400 hover:text-slate-500 text-lg">Características</a>
-					<a href="#pricing" class="text-slate-400 hover:text-slate-500 text-lg">Precios</a>
-					<a href="#contact" class="text-slate-400 hover:text-slate-500 text-lg">Contacto</a>
+					{
+						NAVIGATION.map(({ title, href }) => (
+							<a href={href} class="text-slate-400 hover:text-slate-500 text-lg">{title}</a>
+						))
+					}
 				</div>
 			</article>
 			<SuscriptionForm client:load />
