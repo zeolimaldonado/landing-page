@@ -1,7 +1,21 @@
 ---
-
+import { FEATURES } from "../constants";
+import Item from "./features/Item.astro";
 ---
 
 <section id="features" class="container mx-auto min-h-screen py-10 pt-24 px-6 space-y-8 flex flex-col">
     <h1 class="text-5xl text-center font-semibold text-slate-300">Características</h1>
+    <h2 class="text-3xl text-center font-medium text-slate-300">Conecta. Colabora. Automatiza.</h2>
+    <p class="text-slate-400 font-semibold text-xl text-center max-w-[65ch] mx-auto text-balance">
+        CTAPP distribuye las actividades de manera eficiente para que todo el personal de tu organización pueda colaborar
+        en tiempo real y de forma segura para cada toma de decisiones. Recibe notificaciones relevantes a tus propias actividades
+        y culmina con reportes de forma automática.
+    </p>
+    <div class="grid grid-cols-3 gap-x-16 gap-y-4">
+        {
+            FEATURES.map((feature) => (
+                <Item {...feature} />
+            ))
+        }
+    </div>
 </section>

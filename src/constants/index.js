@@ -122,3 +122,30 @@ export const PEOPLE = [
         description: 'Cuentan con la aplicación móvil para registrar rondas de inspección, visitas y visitas de seguridad, entre otras actividades.'
     }
 ]
+
+export const FEATURES = [
+    {
+        title: 'Tu información en un solo lugar',
+        description: 'Mantente actualizado con la información de toda la organización en tiempo real.'
+    },
+    {
+        title: 'Inteligente',
+        description: 'Mantente actualizado con la información de toda la organización en tiempo real.'
+    },
+    {
+        title: 'Seguro',
+        description: 'Mantente actualizado con la información de toda la organización en tiempo real.'
+    },
+    {
+        title: 'Flexible',
+        description: 'Mantente actualizado con la información de toda la organización en tiempo real.'
+    },
+    {
+        title: 'Personalizable',
+        description: 'Mantente actualizado con la información de toda la organización en tiempo real.'
+    },
+    {
+        title: 'Automatizado',
+        description: 'Mantente actualizado con la información de toda la organización en tiempo real.'
+    },
+]
