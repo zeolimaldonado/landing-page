@@ -1,0 +1,66 @@
+---
+
+---
+
+<section id="contact" class="container mx-auto min-h-screen py-10 pt-24 px-6 space-y-8 flex flex-col justify-center">
+    <h1 class="text-5xl text-center font-semibold text-slate-300">Contactanos</h1>
+    <p class="text-slate-400 font-semibold text-xl text-center max-w-[65ch] mx-auto text-balance">
+        Si deseas obtener una demo de la aplicación, o deseas conocer más características para poder integrarlo en los procesos de tu empresa, puedes contactarnos completando el siguiente formulario
+    </p>
+    <form class="w-3/5 mx-auto py-8 text-slate-300 space-y-4">
+        <div class="flex justify-between items-center gap-4">
+            <article class='flex-1 space-y-3'>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" class="w-full bg-neutral-700 outline-neutral-700 text-slate-300 text-sm px-3 py-2 rounded-sm" placeholder='Nombre completo'>
+            </article>
+            <article class='flex-1 space-y-3'>
+                <label for="title">Título</label>
+                <input type="text" id="title" class="w-full bg-neutral-700 outline-neutral-700 text-slate-300 text-sm px-3 py-2 rounded-sm" placeholder='Título del mensaje'>
+            </article>
+        </div>
+        <div class="flex justify-between items-center gap-4">
+            <article class='flex-1 space-y-3'>
+                <label for="company-email">Correo empresarial</label>
+                <input type="text" id="company-email" class="w-full bg-neutral-700 outline-neutral-700 text-slate-300 text-sm px-3 py-2 rounded-sm" placeholder='Correo empresarial'>
+            </article>
+            <article class='flex-1 space-y-3'>
+                <label for="company">Nombre de la empresa</label>
+                <input type="text" id="company" class="w-full bg-neutral-700 outline-neutral-700 text-slate-300 text-sm px-3 py-2 rounded-sm" placeholder='Nombre de la empresa'>
+            </article>
+        </div>
+        <div class='space-y-3'>
+            <label for="company-size">Tamaño de la empresa</label>
+            <div class='flex gap-6 items-center'>
+                <div class='flex gap-2 items-center'>
+                    <input type='radio' name='company-size' class='w-4 h-4'>
+                    <span>0 - 10</span>
+                </div>
+                <div class='flex gap-2 items-center'>
+                    <input type='radio' name='company-size' class='w-4 h-4'>
+                    <span>10 - 50</span>
+                </div>
+                <div class='flex gap-2 items-center'>
+                    <input type='radio' name='company-size' class='w-4 h-4'>
+                    <span>50 - 250</span>
+                </div>
+                <div class='flex gap-2 items-center'>
+                    <input type='radio' name='company-size' class='w-4 h-4'>
+                    <span>250 - 1000</span>
+                </div>
+                <div class='flex gap-2 items-center'>
+                    <input type='radio' name='company-size' class='w-4 h-4'>
+                    <span>1000+</span>
+                </div>
+            </div>
+        </div>
+        <div class='space-y-3'>
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows='10' class="w-full bg-neutral-700 outline-neutral-700 text-slate-300 text-sm px-3 py-2 rounded-sm resize-none" placeholder='Escribe tu mensaje'></textarea>
+        </div>
+        <div>
+            <button class="px-6 min-w-24 text-sky-600 text-sm font-semibold bg-slate-200 rounded-full h-11">
+                Enviar
+            </button>
+        </div>
+    </form>
+</section>

@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Pricing from '../components/Pricing.astro';
 import Faq from '../components/Faq.astro';
+import Features from '../components/Features.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="CTAPP">
@@ -10,9 +12,10 @@ import Faq from '../components/Faq.astro';
 		<Hero />
 		<section class="w-full relative">
 			<div class="bg-body-pattern bg-repeat absolute inset-0 top-0 left-0 right-0" />
+			<Features />
 			<Pricing />
 			<Faq />
-			<section class="h-screen w-full"></section>
+			<Contact />
 		</section>
 	</main>
 </Layout>
