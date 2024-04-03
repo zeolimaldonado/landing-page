@@ -95,3 +95,30 @@ export const FAQ = [
         answer: 'Astro is a new way to build static websites. It is a new way to build static websites. It is a new way to build static websites.'
     }
 ]
+
+export const PEOPLE = [
+    {
+        job: 'Guardia de Seguridad',
+        description: 'Cuentan con la aplicación móvil para registrar rondas de inspección, visitas y visitas de seguridad, entre otras actividades.'
+    },
+    {
+        job: 'Guardia de Seguridad',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
+    {
+        job: 'Guardia de Seguridad',
+        description: 'Cuentan con la aplicación móvil para registrar rondas de inspección, visitas y visitas de seguridad, entre otras actividades.'
+    },
+    {
+        job: 'Guardia de Seguridad',
+        description: 'Cuentan con la aplicación móvil para registrar rondas de inspección, visitas y visitas de seguridad, entre otras actividades.'
+    },
+    {
+        job: 'Guardia de Seguridad',
+        description: 'Cuentan con la aplicación móvil para registrar rondas de inspección, visitas y visitas de seguridad, entre otras actividades.'
+    },
+    {
+        job: 'Guardia de Seguridad',
+        description: 'Cuentan con la aplicación móvil para registrar rondas de inspección, visitas y visitas de seguridad, entre otras actividades.'
+    }
+]

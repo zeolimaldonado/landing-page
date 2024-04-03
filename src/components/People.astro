@@ -1,0 +1,19 @@
+---
+import Card from "./people/Card.astro"
+import { PEOPLE } from "./../constants"
+---
+
+<section id="features" class="container mx-auto min-h-screen py-10 pt-24 px-6 space-y-8 flex flex-col">
+    <h1 class="text-5xl text-center font-semibold text-slate-300">Diseñado para ti</h1>
+    <p class="text-slate-400 font-semibold text-xl text-center max-w-[65ch] mx-auto text-balance">
+        CTAPP ha sido diseñado para satisfacer las necesidades de las empresas de todos los tamaños, con la división de actividades de forma eficiente
+        de acuerdo al rol que cumple cada usuario de la organización.
+    </p>
+    <section class="w-full grid grid-cols-3 justify-between items-stretch gap-6">
+        {
+            PEOPLE.map((person) => (
+                <Card {...person} />
+            ))
+        }
+    </section>
+</section>
