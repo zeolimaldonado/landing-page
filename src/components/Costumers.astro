@@ -5,36 +5,26 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 <section id="features" class="container mx-auto min-h-screen py-10 pt-24 px-6 flex flex-col">
     <h5 class="font-semibold text-slate-300 text-2xl">Historias de nuestros clientes</h5>
     <div class="flex items-center justify-between w-full">
-        <h1 class="text-4xl font-bold text-slate-200 text-pretty max-w-[40ch] py-6">
+        <h1 class="text-4xl font-bold text-slate-200 text-pretty max-w-[65ch] py-6">
             ¡Descubre lo que dicen nuestros clientes! Lee opiniones reales sobre cómo nuestro servicio de servidor ha impulsado el éxito de sus proyectos.
         </h1>
-        <div class="flex gap-0 w-64 border-2 border-gray-500 border-b-0 bg-neutral-700">
-            <div class="flex-1 h-32 flex justify-center items-center border-r-2 border-r-gray-500">
-                <FaAngleLeft size="48" className="text-slate-200" />
-            </div>
-            <div class="flex-1 h-32 flex justify-center items-center">
-                <FaAngleRight size="48" className="text-slate-200" />
-            </div>
-        </div>
     </div>
-    <div class="border-2 border-gray-500 flex justify-between items-stretch gap-0 bg-neutral-700">
-        <div class="flex-1 flex flex-col justify-between px-6 py-8">
-            <p class="italic font-medium text-lg text-slate-300 flex-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa ac est finibus venenatis. Etiam vulputate sem fringilla arcu 
-                pellentesque ornare ut sit amet lacus. Curabitur tincidunt aliquam ante, ut sodales justo efficitur sit amet. Sed vitae accumsan metus. 
-                Suspendisse id tincidunt ipsum. Aenean bibendum metus ante, in eleifend ante viverra ut. Vivamus non quam sit amet felis molestie consectetur. 
-                Integer hendrerit accumsan lacinia. Curabitur euismod pretium scelerisque
-            </p>
-            <div class="flex gap-4 items-center">
-                <div class="w-12 h-12 rounded-full bg-gray-400" />
-                <div>
-                    <h6 class="font-semibold text-slate-200">Fernando Sánchez</h6>
-                    <p class="text-slate-400 text-sm">CTAPP</p>
-                </div>
-            </div>
+    <div class="pt-10 grid grid-cols-4 gap-x-4">
+        <div class="grid gap-4">
+            <div class="w-full h-60 bg-slate-200 rounded-xl" />
+            <div class="w-full h-40 bg-slate-200 rounded-xl" />
         </div>
-        <div class="w-64 min-h-64 border-l-2 border-l-gray-500 flex justify-center items-center">
-            <div class="w-40 h-40 bg-gray-400 rounded" />
+        <div class="grid">
+            <div class="w-full h-60 bg-slate-200 rounded-xl" />
+            <div class="w-full h-40 bg-slate-200 rounded-xl" />
+        </div>
+        <div class="grid">
+            <div class="w-full h-60 bg-slate-200 rounded-xl" />
+            <div class="w-full h-40 bg-slate-200 rounded-xl" />
+        </div>
+        <div class="grid">
+            <div class="w-full h-40 bg-slate-200 rounded-xl" />
+            <div class="w-full h-60 bg-slate-200 rounded-xl" />
         </div>
     </div>
 </section>
