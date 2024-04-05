@@ -5,6 +5,10 @@ export const NAVIGATION = [
         href: '#home'
     },
     {
+        title: 'Sobre Nosotros',
+        href: '#about'
+    },
+    {
         title: 'Características',
         href: '#features'
     },

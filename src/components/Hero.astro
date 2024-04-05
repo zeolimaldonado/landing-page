@@ -1,12 +1,16 @@
 ---
 import ButtonDemo from "./ButtonDemo.astro"
+import Logo from './logo/Logo.astro'
 ---
 
-<section id="home" class="w-full h-screen p-4 pt-20 relative">
+<section id="home" class="w-full h-screen p-4 relative">
 	<div class="hero h-0" />
 	<div class="container mx-auto h-full flex flex-col justify-center items-center gap-8 px-6 relative">
 		<section class="flex flex-col justify-center items-center gap-2">
-			<h1 class="font-semibold text-5xl/[1.1] max-w-[56rem] text-center text-pretty px-4 mb-4">
+			<div class='w-1/2 mb-6'>
+				<Logo />
+			</div>
+			<h1 class="font-semibold text-4xl/[1.1] max-w-[56rem] text-center text-pretty px-4 mb-4">
 				Desata el poder de tu negocio con nuestros servidores
 			</h1>
 			<p class="font-light max-w-3xl px-8 text-gray-100 text-balance text-xl text-center">

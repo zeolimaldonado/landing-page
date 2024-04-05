@@ -2,14 +2,15 @@
 import ButtonDemo from "./ButtonDemo.astro"
 import NavigationItem from "./NavigationItem.astro"
 import { NAVIGATION } from "../constants";
+import LogoHorizontal from './logo/Logo-horizontal.astro';
 ---
 
 <section class='w-screen h-16 py-2 bg-neutral-900 bg-opacity-90 fixed top-0 z-50'>
 	<nav class="h-full container mx-auto flex justify-between gap-2 items-center px-6">
-		<div class="flex-1">
-			<h4 class="text-white">
-				Serverless
-			</h4>
+		<div class="flex-1 flex justify-start items-center">
+			<div class='max-h-14 w-full'>
+				<LogoHorizontal />
+			</div>
 		</div>
 		<ul class="flex justify-center items-center gap-4">
 			{
