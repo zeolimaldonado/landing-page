@@ -135,31 +135,31 @@ export const FEATURES = [
     {
         title: 'Escalabilidad instantánea',
         description: 'Ajusta rápidamente los recursos de tu servidor según las necesidades de tu negocio, sin interrupciones ni tiempos de inactividad.',
-        image: 'images/features/feature-1.jpg'
+        image: '/landing-page/images/features/feature-1.jpg'
     },
     {
         title: 'Alta disponibilidad',
         description: 'Garantiza un funcionamiento ininterrumpido de tus aplicaciones con nuestra infraestructura de servidores altamente confiable.',
-        image: 'images/features/feature-2.jpg'
+        image: '/landing-page/images/features/feature-2.jpg'
     },
     {
         title: 'Seguridad robusta',
         description: 'Protege tus datos y la integridad de tu negocio con nuestras medidas de seguridad avanzadas, incluyendo firewalls, encriptación y monitoreo constante.',
-        image: 'images/features/feature-3.jpg'
+        image: '/landing-page/images/features/feature-3.jpg'
     },
     {
         title: 'Rendimiento óptimo',
         description: 'Experimenta un rendimiento excepcional con nuestros servidores de última generación, optimizados para cargas de trabajo exigentes y aplicaciones de alto tráfico.',
-        image: 'images/features/feature-3.jpg'
+        image: '/landing-page/images/features/feature-3.jpg'
     },
     {
         title: 'Soporte técnico experto',
         description: 'Obtén asistencia técnica de primer nivel de nuestro equipo de expertos en servidores, disponibles las 24 horas del día, los 7 días de la semana.',
-        image: 'images/features/feature-2.jpg'
+        image: '/landing-page/images/features/feature-2.jpg'
     },
     {
         title: 'Flexibilidad de configuración',
         description: 'Personaliza la configuración de tu servidor según tus necesidades específicas, desde la capacidad de almacenamiento hasta la potencia de procesamiento, para maximizar la eficiencia de tus operaciones.',
-        image: 'images/features/feature-1.jpg'
+        image: '/landing-page/images/features/feature-1.jpg'
     },
 ]
