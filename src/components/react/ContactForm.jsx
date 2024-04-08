@@ -28,31 +28,6 @@ export default function ContactForm () {
                 </article>
             </div>
             <div className='space-y-3'>
-                <label htmlFor="company-size">Tamaño de la empresa</label>
-                <div className='flex gap-6 items-center'>
-                    <div className='flex gap-2 items-center'>
-                        <input type='radio' name='company-size' className='w-4 h-4' />
-                        <span>0 - 10</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                        <input type='radio' name='company-size' className='w-4 h-4' />
-                        <span>10 - 50</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                        <input type='radio' name='company-size' className='w-4 h-4' />
-                        <span>50 - 250</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                        <input type='radio' name='company-size' className='w-4 h-4' />
-                        <span>250 - 1000</span>
-                    </div>
-                    <div className='flex gap-2 items-center'>
-                        <input type='radio' name='company-size' className='w-4 h-4' />
-                        <span>1000+</span>
-                    </div>
-                </div>
-            </div>
-            <div className='space-y-3'>
                 <label htmlFor="message">Mensaje</label>
                 <textarea id="message" rows='10' className="w-full bg-neutral-700 outline-neutral-700 text-slate-300 text-sm px-3 py-2 rounded-md resize-none" placeholder='Escribe tu mensaje' />
             </div>
